@@ -1,8 +1,8 @@
 ﻿using AppKit;
+using ClassHierarchy;
 using Foundation;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.MacOS;
-using XamarinFormsStarterKit.UserInterfaceVisualizer;
 
 namespace UserInterfaceVisualizer.Mac
 {

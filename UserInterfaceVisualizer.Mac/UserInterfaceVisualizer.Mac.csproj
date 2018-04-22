@@ -107,6 +107,10 @@
       <Project>{2A9EC3FF-547F-44C2-B0FE-8D1EE8576287}</Project>
       <Name>UserInterfaceVisualizer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ClassHierarchy\ClassHierarchy.csproj">
+      <Project>{3018F83B-D2B3-481C-A4DB-8D0C3F0241A0}</Project>
+      <Name>ClassHierarchy</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.1.0.398256-nightly\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.398256-nightly\build\netstandard2.0\Xamarin.Forms.targets')" />
