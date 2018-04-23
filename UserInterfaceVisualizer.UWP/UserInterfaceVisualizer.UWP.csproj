@@ -146,12 +146,6 @@
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.354232-pre3" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.1" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UserInterfaceVisualizer\UserInterfaceVisualizer.csproj">
-      <Project>{F32B5136-2D2A-40CF-84B8-4A9B17EB20ED}</Project>
-      <Name>UserInterfaceVisualizer</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
