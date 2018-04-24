@@ -9,6 +9,8 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>UserInterfaceVisualizer.Mac</RootNamespace>
     <AssemblyName>UserInterfaceVisualizerMac</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>Xamarin.Mac</TargetFrameworkIdentifier>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -45,7 +47,7 @@
     <IncludeMonoRuntime>true</IncludeMonoRuntime>
     <UseSGen>true</UseSGen>
     <UseRefCounting>true</UseRefCounting>
-    <LinkMode>None</LinkMode>
+    <LinkMode>SdkOnly</LinkMode>
     <HttpClientHandler>HttpClientHandler</HttpClientHandler>
     <XamMacArch></XamMacArch>
     <AOTMode>None</AOTMode>
@@ -66,23 +68,6 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.3.1.0.398256-nightly\lib\Xamarin.Mac\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="WebDriver">
-      <HintPath>..\packages\Selenium.WebDriver.3.11.2\lib\net45\WebDriver.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Drawing" />
-    <Reference Include="WebDriver.Support">
-      <HintPath>..\packages\Selenium.Support.3.11.2\lib\net45\WebDriver.Support.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="appium-dotnet-driver">
-      <HintPath>..\packages\Appium.WebDriver.3.0.0.2\lib\net45\appium-dotnet-driver.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.Core">
-      <HintPath>..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -100,10 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Screenshots\" />
-    <Folder Include="Screenshots\droid\" />
-    <Folder Include="Screenshots\ios\" />
-    <Folder Include="UserInterfaceVisualizer\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -117,28 +98,15 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInterfaceVisualizer\App.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="UserInterfaceVisualizer\MainPage.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="UserInterfaceVisualizer\AppiumRunner.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UserInterfaceVisualizer\App.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserInterfaceVisualizer\MainPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+    <ProjectReference Include="..\UserInterfaceVisualizer\UserInterfaceVisualizer.csproj">
+      <Project>{2A9EC3FF-547F-44C2-B0FE-8D1EE8576287}</Project>
+      <Name>UserInterfaceVisualizer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.1.0.398256-nightly\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.398256-nightly\build\netstandard2.0\Xamarin.Forms.targets')" />

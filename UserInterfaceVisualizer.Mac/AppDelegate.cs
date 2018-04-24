@@ -4,7 +4,6 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.MacOS;
 using XamarinFormsStarterKit.UserInterfaceVisualizer;
 
-
 namespace UserInterfaceVisualizer.Mac
 {
 	[Register("AppDelegate")]
@@ -14,7 +13,6 @@ namespace UserInterfaceVisualizer.Mac
 
         public AppDelegate()
         {
-            
             var style = NSWindowStyle.Closable | NSWindowStyle.Resizable | NSWindowStyle.Titled;
 
 			var rect = new CoreGraphics.CGRect(2000, 2000, 2000, 2000);
@@ -30,14 +28,10 @@ namespace UserInterfaceVisualizer.Mac
             get { return _window; }
         }
 
-      
-
         public override void DidFinishLaunching(NSNotification notification)
         {
             Forms.Init();
             LoadApplication(new App());
-
-            AppiumRunner.Execute();
             base.DidFinishLaunching(notification);
         }
 
