@@ -14,7 +14,7 @@ namespace XamarinFormsStarterKit.UserInterfaceVisualizer
 		{
 			InitializeComponent();
              
-			ComponentBuilder.LoadAllComponents(Content,suppressAllBackGroundColor:true);
+			ComponentBuilder.LoadAllComponents(Content,suppressAllBackGroundColor:false);
 
              
 		}
