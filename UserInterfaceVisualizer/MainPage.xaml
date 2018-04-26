@@ -1,55 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:UserInterfaceVisualizer" x:Class="XamarinFormsStarterKit.UserInterfaceVisualizer.MainPage">
-    <Grid x:Name="controlGrid" Margin="5" RowSpacing="5" ColumnSpacing="5">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <FlexLayout Grid.Row="0" Grid.Column="0" Direction="Column" AlignItems="Stretch">
-            <Label Text="iPhone X"   FlexLayout.Grow=".5" FlexLayout.AlignSelf="Center">
-            </Label>
-            <Image x:Name="iPhoneX" FlexLayout.Grow="9.5"   />
+    <FlexLayout Direction="Row" AlignItems="Stretch" JustifyContent="SpaceEvenly">
+        <FlexLayout FlexLayout.Grow="1" Direction="Column" AlignItems="Stretch">
+            <BoxView FlexLayout.Grow=".5" FlexLayout.AlignSelf="Center">
+            </BoxView>
+            <BoxView FlexLayout.Grow="9.5" FlexLayout.AlignSelf="Center">
+            </BoxView>
         </FlexLayout>
-        <FlexLayout Grid.Row="0" Grid.Column="1" Direction="Column" AlignItems="Stretch">
-            <Label Text="iPhone 8" FlexLayout.Grow=".5" FlexLayout.AlignSelf="Center">
-            </Label>
-            <Image x:Name="iPhone8" FlexLayout.Grow="9.5"  />
-        </FlexLayout>
-        <FlexLayout Grid.Row="0" Grid.Column="2" Direction="Column" AlignItems="Stretch">
-            <Label Text="android720_1280_5" FlexLayout.Grow=".5" FlexLayout.AlignSelf="Center">
-            </Label>
-            <Image x:Name="android720_1280_5" FlexLayout.Grow="9.5"  />
-        </FlexLayout>
-        <FlexLayout Grid.Row="0" Grid.Column="3" Direction="Column" AlignItems="Stretch">
-            <Label Text="android1080_1920_5_2" FlexLayout.Grow=".5" FlexLayout.AlignSelf="Center">
-            </Label>
-            <Image x:Name="android1080_1920_5_2" FlexLayout.Grow="9.5" />
-        </FlexLayout>
-        <FlexLayout Grid.Row="1" Grid.Column="0" Direction="Column" AlignItems="Stretch">
-            <Label Text="iPhone 8 plus" FlexLayout.Grow=".5" FlexLayout.AlignSelf="Center">
-            </Label>
-            <Image x:Name="iPhone8p" FlexLayout.Grow="9.5" />
-        </FlexLayout>
-        <FlexLayout Grid.Row="1" Grid.Column="1" Direction="Column" AlignItems="Stretch">
-            <Label Text="iPhone SE" FlexLayout.Grow=".5" FlexLayout.AlignSelf="Center">
-            </Label>
-            <Image x:Name="iPhoneSE" FlexLayout.Grow="9.5" />
-        </FlexLayout>
-        <FlexLayout Grid.Row="1" Grid.Column="2" Direction="Column" AlignItems="Stretch">
-            <Label Text="android1440_2560_5_8" FlexLayout.Grow=".5" FlexLayout.AlignSelf="Center">
-            </Label>
-            <Image x:Name="android1440_2560_5_8" FlexLayout.Grow="9.5" />
-        </FlexLayout>
-        <FlexLayout Grid.Row="1" Grid.Column="3" Direction="Column" AlignItems="Stretch">
-            <Label Text="android1440_2560_6_2" FlexLayout.Grow=".5" FlexLayout.AlignSelf="Center">
-            </Label>
-            <Image x:Name="android1440_2560_6_2" FlexLayout.Grow="9.5" />
-        </FlexLayout>
-    </Grid>
+    </FlexLayout>
 </ContentPage>

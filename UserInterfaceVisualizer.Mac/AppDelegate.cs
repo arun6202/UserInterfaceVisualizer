@@ -3,6 +3,7 @@ using Foundation;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.MacOS;
 using XamarinFormsStarterKit.UserInterfaceVisualizer;
+ using FFImageLoading.Forms.Mac;
 
 namespace UserInterfaceVisualizer.Mac
 {
@@ -31,6 +32,7 @@ namespace UserInterfaceVisualizer.Mac
         public override void DidFinishLaunching(NSNotification notification)
         {
             Forms.Init();
+			CachedImageRenderer.Init(); 
             LoadApplication(new App());
             base.DidFinishLaunching(notification);
         }
