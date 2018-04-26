@@ -1,11 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:UserInterfaceVisualizer" x:Class="XamarinFormsStarterKit.UserInterfaceVisualizer.MainPage">
-    <FlexLayout Direction="Row" AlignItems="Stretch" JustifyContent="SpaceEvenly">
-        <FlexLayout FlexLayout.Grow="1" Direction="Column" AlignItems="Stretch">
-            <BoxView FlexLayout.Grow=".5" FlexLayout.AlignSelf="Center">
-            </BoxView>
-            <BoxView FlexLayout.Grow="9.5" FlexLayout.AlignSelf="Center">
-            </BoxView>
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:UserInterfaceVisualizer" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinFormsStarterKit.UserInterfaceVisualizer.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <FlexDirection x:Key="ParentStyle">Row</FlexDirection>
+            <Color x:Key="NormalTextColor">Yellow</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView HorizontalOptions="Fill" VerticalOptions="Fill" Orientation="Both">
+        <FlexLayout Direction="Row">
+            <FlexLayout WidthRequest="420" FlexLayout.Grow="1" Direction="Column">
+                <Label Text="w" FlexLayout.Grow=".3" FlexLayout.AlignSelf="Center" />
+                <Image Source="/Users/arunbalakrishnan/UserInterfaceTestRunner/UserInterfaceTestRunner/Screenshots/ios/iPhone 8.png" FlexLayout.Grow="9" />
+            </FlexLayout>
+            <FlexLayout WidthRequest="420" FlexLayout.Grow="1" Direction="Column">
+                <Label Text="w" FlexLayout.Grow=".3" FlexLayout.AlignSelf="Center" />
+                <Image Source="/Users/arunbalakrishnan/UserInterfaceTestRunner/UserInterfaceTestRunner/Screenshots/ios/iPhone 8.png" FlexLayout.Grow="9" />
+            </FlexLayout>
+            <FlexLayout WidthRequest="420" FlexLayout.Grow="1" Direction="Column">
+                <Label Text="w" FlexLayout.Grow=".3" FlexLayout.AlignSelf="Center" />
+                <Image Source="/Users/arunbalakrishnan/UserInterfaceTestRunner/UserInterfaceTestRunner/Screenshots/ios/iPhone 8.png" FlexLayout.Grow="9" />
+            </FlexLayout>
+            <FlexLayout WidthRequest="420" FlexLayout.Grow="1" Direction="Column">
+                <Label Text="w" FlexLayout.Grow=".3" FlexLayout.AlignSelf="Center" />
+                <Image Source="/Users/arunbalakrishnan/UserInterfaceTestRunner/UserInterfaceTestRunner/Screenshots/ios/iPhone 8.png" FlexLayout.Grow="9" />
+            </FlexLayout>
+            <FlexLayout WidthRequest="420" FlexLayout.Grow="1" Direction="Column">
+                <Label Text="w" FlexLayout.Grow=".3" FlexLayout.AlignSelf="Center" />
+                <Image Source="/Users/arunbalakrishnan/UserInterfaceTestRunner/UserInterfaceTestRunner/Screenshots/ios/iPhone 8.png" FlexLayout.Grow="9" />
+            </FlexLayout>
+            <FlexLayout WidthRequest="420" FlexLayout.Grow="1" Direction="Column">
+                <Label Text="w" FlexLayout.Grow=".3" FlexLayout.AlignSelf="Center" />
+                <Image Source="/Users/arunbalakrishnan/UserInterfaceTestRunner/UserInterfaceTestRunner/Screenshots/ios/iPhone 8.png" FlexLayout.Grow="9" />
+            </FlexLayout>
+            <FlexLayout WidthRequest="420" FlexLayout.Grow="1" Direction="Column">
+                <Label Text="w" FlexLayout.Grow=".3" FlexLayout.AlignSelf="Center" />
+                <Image Source="/Users/arunbalakrishnan/UserInterfaceTestRunner/UserInterfaceTestRunner/Screenshots/ios/iPhone 8.png" FlexLayout.Grow="9" />
+            </FlexLayout>
+            <FlexLayout WidthRequest="420" FlexLayout.Grow="1" Direction="Column">
+                <Label Text="w" FlexLayout.Grow=".3" FlexLayout.AlignSelf="Center" />
+                <Image Source="/Users/arunbalakrishnan/UserInterfaceTestRunner/UserInterfaceTestRunner/Screenshots/ios/iPhone 8.png" FlexLayout.Grow="9" />
+            </FlexLayout>
+            <FlexLayout WidthRequest="420" FlexLayout.Grow="1" Direction="Column">
+                <Label Text="w" FlexLayout.Grow=".3" FlexLayout.AlignSelf="Center" />
+                <Image Source="/Users/arunbalakrishnan/UserInterfaceTestRunner/UserInterfaceTestRunner/Screenshots/ios/iPhone 8.png" FlexLayout.Grow="9" />
+            </FlexLayout>
         </FlexLayout>
-    </FlexLayout>
+    </ScrollView>
 </ContentPage>

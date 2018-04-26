@@ -14,7 +14,9 @@ namespace XamarinFormsStarterKit.UserInterfaceVisualizer
 		{
 			InitializeComponent();
              
-			ComponentBuilder.LoadAllComponents(Content);
+			ComponentBuilder.LoadAllComponents(Content,suppressAllBackGroundColor:true);
+
+             
 		}
 
 		protected override void  OnAppearing()
